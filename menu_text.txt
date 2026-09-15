@@ -1,0 +1,50 @@
+RESTAURANT MENU:
+
+=== Italian ===
+
+Appetizers:
+- Bruschetta: $6.99 - Toasted bread with tomatoes, garlic & basil
+- Garlic Bread with Cheese: $5.49 - Crispy bread with melted cheese & herbs
+- Caprese Salad: $7.99 - Fresh mozzarella, tomatoes & basil
+
+Pastas:
+- Spaghetti Carbonara: $12.99 - Classic pasta with bacon & creamy sauce
+- Fettuccine Alfredo: $13.49 - Rich & creamy parmesan sauce
+- Penne Arrabbiata: $11.99 - Spicy tomato sauce with garlic
+- Lasagna al Forno: $14.99 - Layered pasta with meat & cheese
+
+Pizzas:
+- Margherita Pizza: $10.99 - Tomato, mozzarella & fresh basil
+- Pepperoni Pizza: $12.49 - Classic pepperoni with mozzarella
+- Four Cheese Pizza: $13.99 - Blend of four premium cheeses
+- Veggie Supreme: $11.99 - Loaded with fresh vegetables
+
+Mains:
+- Chicken Parmigiana: $15.99 - Breaded chicken with marinara & cheese
+- Eggplant Rollatini: $13.49 - Rolled eggplant with ricotta & sauce
+- Seafood Risotto: $17.99 - Creamy rice with mixed seafood
+
+=== Chinese ===
+
+Starters:
+- Spring Rolls (4 pcs): $4.99 - Crispy rolls with vegetable filling
+- Chicken Dumplings (6 pcs): $6.99 - Steamed dumplings with chicken
+- Hot & Sour Soup: $5.49 - Spicy & tangy traditional soup
+
+Noodles:
+- Chicken Chow Mein: $11.49 - Stir-fried noodles with chicken
+- Vegetable Hakka Noodles: $10.99 - Indo-Chinese style veggie noodles
+- Egg Fried Rice: $9.99 - Classic fried rice with eggs
+- Schezwan Fried Rice: $10.99 - Spicy Schezwan style fried rice
+
+Mains:
+- Kung Pao Chicken: $13.99 - Spicy chicken with peanuts
+- Sweet & Sour Pork: $14.49 - Crispy pork in sweet & sour sauce
+- Mapo Tofu: $12.99 - Spicy tofu in Sichuan sauce
+- Beef with Broccoli: $14.99 - Tender beef with fresh broccoli
+
+Beverages & Desserts:
+- Jasmine Tea: $2.99 - Fragrant Chinese tea
+- Italian Soda: $3.99 - Refreshing flavored soda
+- Tiramisu: $6.49 - Classic Italian coffee dessert
+- Mango Pudding: $5.99 - Sweet & creamy mango dessert

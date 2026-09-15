@@ -1,0 +1,196 @@
+{
+  "italian": {
+    "appetizers": [
+      {
+        "name": "Bruschetta",
+        "price": 6.99,
+        "desc": "Toasted bread with tomatoes, garlic & basil",
+        "img": "https://images.unsplash.com/photo-1572695157366-5e585ab2b69f?w=400&h=300&fit=crop"
+      },
+      {
+        "name": "Garlic Bread with Cheese",
+        "price": 5.49,
+        "desc": "Crispy bread with melted cheese & herbs",
+        "img": "https://images.unsplash.com/photo-1573140401552-388e29d6e4e7?w=400&h=300&fit=crop"
+      },
+      {
+        "name": "Caprese Salad",
+        "price": 7.99,
+        "desc": "Fresh mozzarella, tomatoes & basil",
+        "img": "https://images.unsplash.com/photo-1608897013039-887f21d8c804?w=400&h=300&fit=crop"
+      }
+    ],
+    "pastas": [
+      {
+        "name": "Spaghetti Carbonara",
+        "price": 12.99,
+        "desc": "Classic pasta with bacon & creamy sauce",
+        "img": "https://images.unsplash.com/photo-1612874742237-6526221588e3?w=400&h=300&fit=crop"
+      },
+      {
+        "name": "Fettuccine Alfredo",
+        "price": 13.49,
+        "desc": "Rich & creamy parmesan sauce",
+        "img": "https://images.unsplash.com/photo-1645112411341-6c4fd023714a?w=400&h=300&fit=crop"
+      },
+      {
+        "name": "Penne Arrabbiata",
+        "price": 11.99,
+        "desc": "Spicy tomato sauce with garlic",
+        "img": "https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=400&h=300&fit=crop"
+      },
+      {
+        "name": "Lasagna al Forno",
+        "price": 14.99,
+        "desc": "Layered pasta with meat & cheese",
+        "img": "https://images.unsplash.com/photo-1574894709920-11b28e7367e3?w=400&h=300&fit=crop"
+      }
+    ],
+    "pizzas": [
+      {
+        "name": "Margherita Pizza",
+        "price": 10.99,
+        "desc": "Tomato, mozzarella & fresh basil",
+        "img": "https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=400&h=300&fit=crop"
+      },
+      {
+        "name": "Pepperoni Pizza",
+        "price": 12.49,
+        "desc": "Classic pepperoni with mozzarella",
+        "img": "https://images.unsplash.com/photo-1628840042765-356cda07504e?w=400&h=300&fit=crop"
+      },
+      {
+        "name": "Four Cheese Pizza",
+        "price": 13.99,
+        "desc": "Blend of four premium cheeses",
+        "img": "https://images.unsplash.com/photo-1571407970349-bc81e7e96a47?w=400&h=300&fit=crop"
+      },
+      {
+        "name": "Veggie Supreme",
+        "price": 11.99,
+        "desc": "Loaded with fresh vegetables",
+        "img": "https://images.unsplash.com/photo-1511689660979-10d2b1aada49?w=400&h=300&fit=crop"
+      }
+    ],
+    "mains": [
+      {
+        "name": "Chicken Parmigiana",
+        "price": 15.99,
+        "desc": "Breaded chicken with marinara & cheese",
+        "img": "https://images.unsplash.com/photo-1632778149955-e80f8ceca2e8?w=400&h=300&fit=crop"
+      },
+      {
+        "name": "Eggplant Rollatini",
+        "price": 13.49,
+        "desc": "Rolled eggplant with ricotta & sauce",
+        "img": "https://images.unsplash.com/photo-1572453800999-e8d2d1589b7c?w=400&h=300&fit=crop"
+      },
+      {
+        "name": "Seafood Risotto",
+        "price": 17.99,
+        "desc": "Creamy rice with mixed seafood",
+        "img": "https://images.unsplash.com/photo-1633321702518-596c7b0e13b7?w=400&h=300&fit=crop"
+      }
+    ]
+  },
+  "chinese": {
+    "starters": [
+      {
+        "name": "Spring Rolls (4 pcs)",
+        "price": 4.99,
+        "desc": "Crispy rolls with vegetable filling",
+        "img": "https://images.unsplash.com/photo-1625252597452-91c98bd73def?w=400&h=300&fit=crop"
+      },
+      {
+        "name": "Chicken Dumplings (6 pcs)",
+        "price": 6.99,
+        "desc": "Steamed dumplings with chicken",
+        "img": "https://images.unsplash.com/photo-1563245372-f21724e3856d?w=400&h=300&fit=crop"
+      },
+      {
+        "name": "Hot & Sour Soup",
+        "price": 5.49,
+        "desc": "Spicy & tangy traditional soup",
+        "img": "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=400&h=300&fit=crop"
+      }
+    ],
+    "noodles": [
+      {
+        "name": "Chicken Chow Mein",
+        "price": 11.49,
+        "desc": "Stir-fried noodles with chicken",
+        "img": "https://images.unsplash.com/photo-1612929633738-8fe44f7ec841?w=400&h=300&fit=crop"
+      },
+      {
+        "name": "Vegetable Hakka Noodles",
+        "price": 10.99,
+        "desc": "Indo-Chinese style veggie noodles",
+        "img": "https://images.unsplash.com/photo-1585032226651-759b368d7246?w=400&h=300&fit=crop"
+      },
+      {
+        "name": "Egg Fried Rice",
+        "price": 9.99,
+        "desc": "Classic fried rice with eggs",
+        "img": "https://images.unsplash.com/photo-1603133872878-684f208fb84b?w=400&h=300&fit=crop"
+      },
+      {
+        "name": "Schezwan Fried Rice",
+        "price": 10.99,
+        "desc": "Spicy Schezwan style fried rice",
+        "img": "https://images.unsplash.com/photo-1516684732162-798a0062be99?w=400&h=300&fit=crop"
+      }
+    ],
+    "mains": [
+      {
+        "name": "Kung Pao Chicken",
+        "price": 13.99,
+        "desc": "Spicy chicken with peanuts",
+        "img": "https://images.unsplash.com/photo-1510130315046-ad16c2a4051c?w=400&h=300&fit=crop"
+      },
+      {
+        "name": "Sweet & Sour Pork",
+        "price": 14.49,
+        "desc": "Crispy pork in sweet & sour sauce",
+        "img": "https://images.unsplash.com/photo-1635321593217-40050ad13c74?w=400&h=300&fit=crop"
+      },
+      {
+        "name": "Mapo Tofu",
+        "price": 12.99,
+        "desc": "Spicy tofu in Sichuan sauce",
+        "img": "https://images.unsplash.com/photo-1633801258991-4e38d8d9e8e2?w=400&h=300&fit=crop"
+      },
+      {
+        "name": "Beef with Broccoli",
+        "price": 14.99,
+        "desc": "Tender beef with fresh broccoli",
+        "img": "https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?w=400&h=300&fit=crop"
+      }
+    ]
+  },
+  "beverages": [
+    {
+      "name": "Jasmine Tea",
+      "price": 2.99,
+      "desc": "Fragrant Chinese tea",
+      "img": "https://images.unsplash.com/photo-1563822249548-9a72b6353cd1?w=400&h=300&fit=crop"
+    },
+    {
+      "name": "Italian Soda",
+      "price": 3.99,
+      "desc": "Refreshing flavored soda",
+      "img": "https://images.unsplash.com/photo-1546173159-315724a31696?w=400&h=300&fit=crop"
+    },
+    {
+      "name": "Tiramisu",
+      "price": 6.49,
+      "desc": "Classic Italian coffee dessert",
+      "img": "https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?w=400&h=300&fit=crop"
+    },
+    {
+      "name": "Mango Pudding",
+      "price": 5.99,
+      "desc": "Sweet & creamy mango dessert",
+      "img": "https://images.unsplash.com/photo-1488477181946-6428a0291777?w=400&h=300&fit=crop"
+    }
+  ]
+}
