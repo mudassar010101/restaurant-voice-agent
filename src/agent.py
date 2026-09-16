@@ -24,7 +24,7 @@ from livekit.plugins import ai_coustics, elevenlabs, openai
 
 logger = logging.getLogger("agent")
 
-BACKEND_URL = "https://chrome-dandruff-carrot.ngrok-free.dev"
+BACKEND_URL = "https://restaurant-voice-agent-production-df70.up.railway.app"
 
 load_dotenv(".env.local")
 
