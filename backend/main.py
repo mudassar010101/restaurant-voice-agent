@@ -328,6 +328,7 @@ async def send_email(email: SendEmailRequest):
         return {"status": "sent", "to": email.to_email, "sent_at": sent_at}
 
     except Exception as e:
+        print(f"SEND EMAIL ERROR: {e}")
         conn.execute(
             "INSERT INTO emails_log (to_email, subject, body, status, sent_at) VALUES (?, ?, ?, ?, ?)",
             (email.to_email, email.subject, email.text, f"failed: {e}", sent_at),
