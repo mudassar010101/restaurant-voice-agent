@@ -9,7 +9,9 @@ RUN pip install --no-cache-dir \
     fastapi \
     uvicorn \
     python-dotenv \
-    httpx
+    httpx \
+    requests \
+    pydantic
 
 EXPOSE 8000
 
