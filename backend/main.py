@@ -1,6 +1,7 @@
 import os
 import random
 import smtplib
+import socket
 import sqlite3
 from datetime import datetime, timezone
 from email.mime.text import MIMEText
@@ -13,7 +14,7 @@ load_dotenv(os.path.join(os.path.dirname(__file__), "..", ".env.local"))
 
 app = FastAPI(title="NexSpicy Voice Agent Backend")
 
-DB_PATH = "orders.db"
+DB_PATH = "/tmp/orders.db" if os.getenv("VERCEL") else "orders.db"
 
 SMTP_EMAIL = os.getenv("SMTP_EMAIL")
 SMTP_APP_PASSWORD = os.getenv("SMTP_APP_PASSWORD")
@@ -23,6 +24,12 @@ def get_db():
     conn = sqlite3.connect(DB_PATH)
     conn.row_factory = sqlite3.Row
     return conn
+
+
+def get_ipv4_address(hostname):
+    """Resolve a hostname to its IPv4 address, avoiding Railway's unreachable IPv6 route."""
+    addr_info = socket.getaddrinfo(hostname, None, socket.AF_INET)
+    return addr_info[0][4][0]
 
 
 def init_db():
@@ -314,8 +321,11 @@ async def send_email(email: SendEmailRequest):
 
     conn = get_db()
     try:
-        with smtplib.SMTP("smtp.gmail.com", 587) as server:
+        smtp_ipv4_host = get_ipv4_address("smtp.gmail.com")
+        with smtplib.SMTP(smtp_ipv4_host, 587) as server:
+            server.ehlo("smtp.gmail.com")
             server.starttls()
+            server.ehlo("smtp.gmail.com")
             server.login(SMTP_EMAIL, SMTP_APP_PASSWORD)
             server.sendmail(SMTP_EMAIL, [email.to_email], msg.as_string())
 
@@ -328,7 +338,6 @@ async def send_email(email: SendEmailRequest):
         return {"status": "sent", "to": email.to_email, "sent_at": sent_at}
 
     except Exception as e:
-        print(f"SEND EMAIL ERROR: {e}")
         conn.execute(
             "INSERT INTO emails_log (to_email, subject, body, status, sent_at) VALUES (?, ?, ?, ?, ?)",
             (email.to_email, email.subject, email.text, f"failed: {e}", sent_at),
