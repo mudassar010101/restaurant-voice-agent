@@ -390,7 +390,11 @@ class Assistant(Agent):
         IMPORTANT: Always pass the email address in its normal written form using
         standard Latin characters (e.g. "ali@example.com") — never transliterate it
         into another script, even though you should speak it aloud differently.
-
+        
+        CRITICAL: Never invent, guess, or use a placeholder email address. If the
+        customer has not clearly given you a real email address, ask them for it
+        directly and read it back to them to confirm before calling this tool.
+        Only call this tool once you have their actual, confirmed email address.
         Args:
             to_email: The customer's email address, written normally.
             subject: A short, clear subject line for the email.
