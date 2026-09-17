@@ -1,5 +1,6 @@
 import os
 import random
+import requests
 import smtplib
 import socket
 import sqlite3
@@ -311,8 +312,8 @@ class SendEmailRequest(BaseModel):
 async def send_email(email: SendEmailRequest):
     sent_at = datetime.now(timezone.utc).isoformat()
 
-    if not SMTP_EMAIL or not SMTP_APP_PASSWORD:
-        return {"error": "smtp_not_configured", "message": "SMTP_EMAIL / SMTP_APP_PASSWORD not set in .env.local"}
+    if not os.getenv("RESEND_API_KEY"):
+        return {"error": "email_not_configured", "message": "RESEND_API_KEY not set"}
 
     msg = MIMEText(email.text)
     msg["Subject"] = email.subject
@@ -321,13 +322,21 @@ async def send_email(email: SendEmailRequest):
 
     conn = get_db()
     try:
-        smtp_ipv4_host = get_ipv4_address("smtp.gmail.com")
-        with smtplib.SMTP(smtp_ipv4_host, 587) as server:
-            server.ehlo("smtp.gmail.com")
-            server.starttls()
-            server.ehlo("smtp.gmail.com")
-            server.login(SMTP_EMAIL, SMTP_APP_PASSWORD)
-            server.sendmail(SMTP_EMAIL, [email.to_email], msg.as_string())
+        resend_response = requests.post(
+            "https://api.resend.com/emails",
+            headers={
+                "Authorization": f"Bearer {os.getenv('RESEND_API_KEY')}",
+                "Content-Type": "application/json",
+            },
+            json={
+                "from": "NexSpicy Restaurant <onboarding@resend.dev>",
+                "to": [email.to_email],
+                "subject": email.subject,
+                "text": email.text,
+            },
+        )
+        if resend_response.status_code >= 400:
+            raise Exception(resend_response.text)
 
         conn.execute(
             "INSERT INTO emails_log (to_email, subject, body, status, sent_at) VALUES (?, ?, ?, ?, ?)",
