@@ -5,6 +5,7 @@ WORKDIR /app
 COPY pyproject.toml .
 COPY backend ./backend
 
+# cache-bust: force fresh pip install
 RUN pip install --no-cache-dir \
     fastapi \
     uvicorn \
